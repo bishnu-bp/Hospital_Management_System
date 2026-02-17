@@ -1,0 +1,3 @@
+Full Name|Age|Mobile|Postcode|Address|Symptoms|Doctor
+Mike Jones|37|07555551234|L2 2AB|Kathmandu|Headache, Nausea|Jon Carlos
+Nabraj Oli|25|07123456789|C1 ABC|Kathmandu|Back Pain|John Smith

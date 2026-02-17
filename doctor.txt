@@ -1,0 +1,6 @@
+Full Name|Speciality|Username|Password
+John Smith|Internal Med.|john|MTIz
+Jane Smith|Pediatrics|jane|MTIz
+Jon Carlos|Cardiology|jon|MTIz
+bishnu prasad Upadhyay|heart|bp|MTIz
+Jon Carlos|Cardiology|jons|MTIz

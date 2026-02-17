@@ -1,0 +1,2 @@
+Full Name|Age|Mobile|Postcode|Address|Symptoms|Doctor
+Bishnu upadhyay|20|07012345678|B1 234|Kathmandu|Fever, Cough|John Smith

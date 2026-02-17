@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DoctorWindow</class>
+ <widget class="QMainWindow" name="DoctorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Doctor Portal - Hospital Management System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #f6f7fb;
+}
+QFrame#statCard {
+    background-color: #ffffff;
+    border: 1px solid #e6e9f2;
+    border-radius: 12px;
+}
+QLabel#titleLabel {
+    font-size: 20pt;
+    font-weight: 600;
+    color: #111827;
+}
+QLabel#subtitleLabel {
+    font-size: 10pt;
+    color: #6b7280;
+}
+QLabel#welcomeLabel {
+    font-size: 14pt;
+    font-weight: 500;
+    color: #4f46e5;
+}
+QTableWidget {
+    background: #ffffff;
+    border: 1px solid #e6e9f2;
+    border-radius: 10px;
+    gridline-color: #e6e9f2;
+}
+QHeaderView::section {
+    background-color: #f1f5f9;
+    color: #1f2937;
+    border: none;
+    padding: 8px;
+    font-weight: 600;
+}
+QLCDNumber {
+    background: transparent;
+    color: #111827;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="centralLayout">
+    <property name="spacing">
+     <number>16</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="headerWidget" native="true">
+      <layout class="QVBoxLayout" name="headerLayout">
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="titleLabel">
+         <property name="styleSheet">
+          <string notr="true">text-align: center;
+</string>
+         </property>
+         <property name="text">
+          <string>Doctor Portal</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="welcomeLabel">
+         <property name="text">
+          <string>Welcome, Dr. [Name]</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="statsWidget" native="true">
+      <layout class="QHBoxLayout" name="statsLayout">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="statCard">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="statCardLayout">
+          <property name="spacing">
+           <number>8</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="subtitleLabel">
+            <property name="text">
+             <string>My Patients</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="digitCount">
+             <number>3</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="tableWidget_container" native="true">
+      <layout class="QVBoxLayout" name="tableLayout">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font-size: 14pt; font-weight: 600; color: #374151;</string>
+         </property>
+         <property name="text">
+          <string>My Patients Directory</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <property name="columnCount">
+          <number>6</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>S.N.</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Full Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Age</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Mobile</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Postcode</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Symptoms</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>980</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuMyPatients">
+    <property name="title">
+     <string>My Patients</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuMyPatients"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

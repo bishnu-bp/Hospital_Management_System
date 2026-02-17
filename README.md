@@ -1,10 +1,10 @@
-#  Hospital Management System
+# Hospital Management System
 
 A desktop-based **Hospital Management System** developed to manage doctors, patients, and hospital operations efficiently through a clean and user-friendly interface.
 
 ---
 
-##  Overview
+## Overview
 
 This application simplifies hospital administration by providing:
 
@@ -17,28 +17,49 @@ It is suitable for small to medium healthcare facilities looking for a lightweig
 
 ---
 
-##  Screenshots
+## Screenshots
 
-> Place your screenshots inside: `docs/screenshots/`
+> Place your screenshots inside: `img`
 
-###  Loading Screen
+### Loading Screen
 Displays system initialization progress and version details.
 
-![Loading Screen](docs/screenshots/loading.png)
+![Loading Screen](img/bishnu%20(1).png)
 
 ---
 
-###  Login Screen
+### Login Screen
 Secure login interface for Admin and Doctor users.
 
-![Login Screen](docs/screenshots/login.png)
+![Login Screen](img/bishnu%20(2).png)
 
 ---
 
-###  Dashboard
+### Admin Dashboard
 Main dashboard showing hospital statistics and recently registered doctors.
 
-![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard](img/bishnu%20(3).png)
+
+---
+
+### Patients Management
+Interface for adding, updating, viewing, and managing patient records.
+
+![Dashboard](img/bishnu%20(4).png)
+
+---
+
+### Management Reports
+Provides detailed reports and insights related to hospital operations.
+
+![Dashboard](img/bishnu%20(3).png)
+
+---
+
+### Doctors Dashboard
+Dashboard view for doctors to manage patients and access relevant information.
+
+![Dashboard](img/bishnu%20(3).png)
 
 ---
 
@@ -56,9 +77,9 @@ Main dashboard showing hospital statistics and recently registered doctors.
 
 ## Requirements
 
-- Python 3.8+
-- pip (Python Package Manager)
-- Dependencies listed in `requirements.txt`
+- Python 3.8+  
+- pip (Python Package Manager)  
+- Dependencies listed in `requirements.txt`  
 
 ---
 
@@ -69,7 +90,6 @@ Main dashboard showing hospital statistics and recently registered doctors.
 ```bash
 git clone https://github.com/bishnu-bp/Hospital_Management_System.git
 ```
-
 ### 2. Navigate to the Project Directory
 
 ```bash
